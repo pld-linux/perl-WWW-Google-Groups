@@ -20,7 +20,7 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(Date::Parse) >= 2.24
-BuildRequires:	perl-Email-Simple >= 1.6
+BuildRequires:	perl-Email-Simple >= 1:1.6
 BuildRequires:	perl-TimeDate >= 1:1.14
 BuildRequires:	perl-WWW-Mechanize >= 0.5
 %endif
