@@ -6,7 +6,7 @@
 %define	pdir	WWW
 %define	pnam	Google-Groups
 Summary:	WWW::Google::Groups - Google Groups Agent
-#Summary(pl):	
+Summary(pl):	WWW::Google::Groups - czytnik Google Groups
 Name:		perl-WWW-Google-Groups
 Version:	0.09
 Release:	1
@@ -15,12 +15,14 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/WWW/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	14e9991909162ace95c70723294c2f8b
+URL:		http://search.cpan.org/dist/WWW-Google-Groups/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(Date::Parse) >= 2.24
-BuildRequires:	perl(Email::Simple) >= 1.6
-BuildRequires:	perl(WWW::Mechanize) >= 0.5
+BuildRequires:	perl-Email-Simple >= 1.6
+BuildRequires:	perl-TimeDate >= 1:1.14
+BuildRequires:	perl-WWW-Mechanize >= 0.5
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,8 +30,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 WWW::Google::Groups - Google Groups Agent.
 
-# %description -l pl
-# TODO
+%description -l pl
+WWW::Google::Groups - czytnik Google Groups.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
