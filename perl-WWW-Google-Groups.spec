@@ -6,7 +6,7 @@
 %define	pdir	WWW
 %define	pnam	Google-Groups
 Summary:	WWW::Google::Groups - Google Groups Agent
-Summary(pl):	WWW::Google::Groups - czytnik Google Groups
+Summary(pl.UTF-8):   WWW::Google::Groups - czytnik Google Groups
 Name:		perl-WWW-Google-Groups
 Version:	0.09
 Release:	1
@@ -30,7 +30,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 WWW::Google::Groups - Google Groups Agent.
 
-%description -l pl
+%description -l pl.UTF-8
 WWW::Google::Groups - czytnik Google Groups.
 
 %prep
