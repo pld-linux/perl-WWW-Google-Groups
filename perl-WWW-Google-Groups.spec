@@ -9,7 +9,7 @@ Summary:	WWW::Google::Groups - Google Groups Agent
 Summary(pl.UTF-8):	WWW::Google::Groups - czytnik Google Groups
 Name:		perl-WWW-Google-Groups
 Version:	0.09
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
