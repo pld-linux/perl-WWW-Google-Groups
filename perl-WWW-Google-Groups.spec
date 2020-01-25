@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests		# perform "make test" (requires Internet connection)
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Google-Groups
 Summary:	WWW::Google::Groups - Google Groups Agent
